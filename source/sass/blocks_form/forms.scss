@@ -3,8 +3,6 @@
   padding-right: 20px;
 }
 
-.forms__container {}
-
 .forms__group {
   border: none;
   margin-top: 64px;
@@ -15,19 +13,13 @@
   @include title
 }
 
-.forms__label {
 
-  // display: inline-block;
-  // text-align: center;
-  // margin-top: 20px;
-  // @include subtitle
-}
 
 .span__label {
   display: block;
   @include subtitle;
   margin-top: 16px;
-  // border: 2px solid red;
+
 
 }
 
@@ -48,9 +40,7 @@
 
 
 
-.forms__label--phone {}
 
-.forms__label--mail {}
 
 .forms__input-radio {
   font-family: PT Sans;
@@ -60,9 +50,7 @@
 
 }
 
-.forms__input-checkbox {}
 
-.forms_group {}
 
 .forms__textarea {
   border: none;
@@ -91,7 +79,3 @@
 .modal-window__subtitle {
   text-align: center;
 }
-
-.modal-button {}
-
-.button {}
