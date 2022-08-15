@@ -1,0 +1,97 @@
+.forms {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.forms__container {}
+
+.forms__group {
+  border: none;
+  margin-top: 64px;
+}
+
+.forms__legend {
+  text-align: center;
+  @include title
+}
+
+.forms__label {
+
+  // display: inline-block;
+  // text-align: center;
+  // margin-top: 20px;
+  // @include subtitle
+}
+
+.span__label {
+  display: block;
+  @include subtitle;
+  margin-top: 16px;
+  // border: 2px solid red;
+
+}
+
+.forms__input {
+  min-width: 280px;
+  min-height: 56px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+}
+
+.forms__span {
+  display: block;
+  @include title;
+  text-transform: lowercase;
+  // border: 2px solid red;
+  margin-top: 16px;
+}
+
+
+
+.forms__label--phone {}
+
+.forms__label--mail {}
+
+.forms__input-radio {
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+
+}
+
+.forms__input-checkbox {}
+
+.forms_group {}
+
+.forms__textarea {
+  border: none;
+  // border: 2px solid red;
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 16px;
+
+}
+
+.modal {
+  margin-top: 50px;
+}
+
+.modal-window {
+  width: 237px;
+  margin: 0 auto;
+  // border: 2px solid red;
+}
+
+.modal-window__title {
+  text-align: center;
+}
+
+.modal-window__subtitle {
+  text-align: center;
+}
+
+.modal-button {}
+
+.button {}

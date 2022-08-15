@@ -1,1 +1,41 @@
-// Начните писать стили здесь
+@import "./mixins/mixin";
+@import "./fonts";
+@import "./blocks_index/header";
+@import "./blocks_index/main";
+@import "./blocks_index/description";
+@import "./blocks_index/services";
+@import "./blocks_index/find";
+@import "./blocks_index/footer";
+@import "./blocks_form/forms.scss";
+@import "./blocks_catalog/catalog";
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 320px;
+  margin: 0 auto;
+  border: 2px solid red
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include title;
+}
+
+p,
+a {
+  @include subtitle;
+}
