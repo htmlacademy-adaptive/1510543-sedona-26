@@ -1,0 +1,52 @@
+.catalog {
+  padding-left: 20px;
+}
+
+.catalog-item__figcaption {
+  width: 175px;
+}
+
+.catalog-item__span {
+  display: inline-block;
+}
+
+.catalog-item__span--title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+}
+
+.catalog-item__span--subtitle {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.video {
+  padding-top: 17px;
+  padding-left: 20px;
+}
+
+.video__title {
+  text-align: center;
+
+  @include title;
+  width: 266px;
+}
+
+.video__subtitle {
+  text-align: center;
+
+  @include subtitle;
+  width: 266px;
+  margin-top: 30px;
+}
+
+.video__img {
+  display: inline-block;
+  margin-top: 17px;
+}

@@ -1,0 +1,69 @@
+.forms {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.forms__group {
+  border: none;
+  margin-top: 64px;
+}
+
+.forms__legend {
+  text-align: center;
+
+  @include title;
+}
+
+.span__label {
+  display: block;
+
+  @include subtitle;
+  margin-top: 16px;
+}
+
+.forms__input {
+  min-width: 280px;
+  min-height: 56px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+}
+
+.forms__span {
+  display: block;
+
+  @include title;
+  text-transform: lowercase;
+  margin-top: 16px;
+}
+
+.forms__input-radio {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.forms__textarea {
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 16px;
+}
+
+.modal {
+  margin-top: 50px;
+}
+
+.modal-window {
+  width: 237px;
+  margin: 0 auto;
+}
+
+.modal-window__title {
+  text-align: center;
+}
+
+.modal-window__subtitle {
+  text-align: center;
+}
