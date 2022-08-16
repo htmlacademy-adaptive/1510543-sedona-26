@@ -1,17 +1,9 @@
 .header {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // border: 2px solid red;
   min-height: 56px;
 }
 
 .visually-hidden {
-  display: none
-}
-
-.header__btn {
-  // position: absolute;
+  display: none;
 }
 
 .header__btn--active {
@@ -26,16 +18,8 @@
   z-index: 3;
 }
 
-.header__btn--burger {
-  // background-image: url(/source/img/icon-menu.svg.svg);
-}
-
-.header__img {}
-
 .header__navigation {
   position: relative;
-  // @include background;
-  // display: none
 }
 
 
@@ -45,12 +29,9 @@
   top: 0;
   right: 0;
   z-index: 2;
+
   @include background;
-
-
 }
-
-.navigation-list--opened {}
 
 .navigation-list__item {
   list-style: none;
@@ -61,9 +42,8 @@
 
 .navigation-list__link {
   display: inline-block;
-  // padding-top: 17px;
-  // padding-bottom: 12px;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
+
   @include title;
 }

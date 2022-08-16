@@ -1,19 +1,14 @@
 .footer {
-
   padding-top: 28px;
   padding-left: 76px;
   padding-right: 78px;
   padding-bottom: 23px;
-
 }
-
-.footer__wrapper {}
 
 .footer__span {
   text-align: center;
+
   @include title;
-
-
 }
 
 .footer-list {
@@ -29,7 +24,7 @@
 .footer-developed {
   display: flex;
   justify-content: center;
-  align-items: flex-end
+  align-items: flex-end;
 }
 
 .footer-developed__icon {
@@ -39,5 +34,4 @@
 
 .footer-developed__subtitle {
   @include subtitle;
-
 }

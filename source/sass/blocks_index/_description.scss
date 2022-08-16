@@ -3,7 +3,6 @@
 }
 
 .description-item__wrapper {
-
   padding-top: 54px;
   padding-left: 16px;
   padding-right: 22px;
@@ -37,23 +36,6 @@
   color: rgba(255, 255, 255, 1);
 }
 
-
 .description__img {
-  background-image: url(./img/photo-city@1x\ 1.png);
-
-
+  background-image: url("./img/photo-city@1x\ 1.png");
 }
-
-.description__subitem {
-  // background-color: rgba(238, 238, 238, 1);
-  // padding-top: 23px;
-  // padding-left: 18px;
-  // padding-right: 18px;
-  // padding-bottom: 52px;
-}
-
-.description-item__container {
-  // border: 2px solid red;
-}
-
-.description-item__img {}

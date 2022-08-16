@@ -10,17 +10,15 @@
 
 .forms__legend {
   text-align: center;
-  @include title
+
+  @include title;
 }
-
-
 
 .span__label {
   display: block;
+
   @include subtitle;
   margin-top: 16px;
-
-
 }
 
 .forms__input {
@@ -32,34 +30,25 @@
 
 .forms__span {
   display: block;
+
   @include title;
   text-transform: lowercase;
-  // border: 2px solid red;
   margin-top: 16px;
 }
 
-
-
-
-
 .forms__input-radio {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-
 }
-
-
 
 .forms__textarea {
   border: none;
-  // border: 2px solid red;
   width: 100%;
   margin-top: 20px;
   background-color: rgba(242, 242, 242, 1);
   padding: 16px;
-
 }
 
 .modal {
@@ -69,7 +58,6 @@
 .modal-window {
   width: 237px;
   margin: 0 auto;
-  // border: 2px solid red;
 }
 
 .modal-window__title {

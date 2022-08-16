@@ -1,5 +1,5 @@
 .main-promo {
-  background-image: url(../img/back-desktop.jpg.jpg);
+  background-image: url("../img/back-desktop.jpg.jpg");
   min-height: 389px;
   padding-top: 90px;
   background-repeat: no-repeat;
@@ -9,19 +9,14 @@
 .main-promo__img {
   display: block;
   margin: 0 auto;
-
   max-width: 100%;
-
-
 }
-
 
 .main-title {
   padding-top: 32px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 32px;
-
 }
 
 .main-title__title {
