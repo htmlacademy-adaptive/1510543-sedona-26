@@ -1,14 +1,21 @@
 .services__container {
-  padding-top: 23px;
-  padding-left: 18px;
-  padding-right: 18px;
+  position: relative;
+  max-width: 282px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 52px;
 }
 
 .services-item {
-  width: 240px;
-  margin-top: 22px;
+  padding-top: 22px;
 }
 
 .services-item:nth-child(1) {
-  margin: 0;
+  padding: 0;
+}
+
+.services-item__img {
+  position: absolute;
+  content: "";
+  left: 80%;
 }

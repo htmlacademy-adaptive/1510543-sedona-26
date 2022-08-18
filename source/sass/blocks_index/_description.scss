@@ -3,22 +3,23 @@
 }
 
 .description-item__wrapper {
+  max-width: 282px;
   padding-top: 54px;
-  padding-left: 16px;
-  padding-right: 22px;
+  margin: 0 auto;
   padding-bottom: 40px;
 }
 
-.description-item__wrapper--dark {
+.description-item--light {
   background-color: rgba(238, 238, 238, 1);
 }
 
-.description-item--position {
-  margin-top: 49px;
+.description-item__wrapper--position {
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .description-item__title {
-  width: 282px;
+  @include title;
   text-align: center;
 }
 
@@ -27,15 +28,20 @@
 }
 
 .description-item__subtitle {
-  width: 282px;
+  @include subtitle;
   text-align: center;
-  margin-top: 11px;
+  padding-top: 11px;
+}
+
+.description-item--top {
+  padding-top: 24px;
 }
 
 .description-item__subtitle--light {
   color: rgba(255, 255, 255, 1);
 }
 
-.description__img {
-  background-image: url("./img/photo-city@1x\ 1.png");
+.description-item__img {
+  display: block;
+  margin: 0 auto;
 }

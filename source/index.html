@@ -10,38 +10,43 @@
 
 <body>
   <!-- Хедер -->
-
   <header class="header">
-    <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-    <button class="header__btn header__btn--active" aria-label="Открыть меню">1</button>
+    <div class="wrapper">
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <button class="header__btn header__btn--active" aria-label="Открыть меню">1</button>
 
-    <!-- Навигация -->
-    <nav class="header__navigation">
-      <ul class="navigation-list navigation-list--opened">
-        <li class="navigation-list__item"><a class="navigation-list__link" href="./index.html">Главная</a></li>
-        <li class="navigation-list__item"><a class="navigation-list__link" href="./catalog.html">Фото и видео</a></li>
-        <li class="navigation-list__item"><a class="navigation-list__link" href="./form.html">Форма отзыва</a></li>
-        <li class="navigation-list__item"><a class="navigation-list__link" href="#">Html Academy</a></li>
-      </ul>
-    </nav>
-    <!-- Логотип -->
-    <a class="header__logo" href="#">
-      <img class="header__img" src="./img/header__logo.svg" alt="Логотип" width="185" height="96">
-    </a>
+      <!-- Навигация -->
+      <nav class="header__navigation">
+        <ul class="navigation-list navigation-list--opened">
+          <li class="navigation-list__item"><a class="navigation-list__link" href="./index.html">Главная</a></li>
+          <li class="navigation-list__item"><a class="navigation-list__link" href="./catalog.html">Фото и видео</a></li>
+          <li class="navigation-list__item"><a class="navigation-list__link" href="./form.html">Форма отзыва</a></li>
+          <li class="navigation-list__item"><a class="navigation-list__link" href="#">Html Academy</a></li>
+        </ul>
+      </nav>
+      <!-- Логотип -->
+      <a class="header__logo" href="#">
+        <img class="header__img" src="./img/header__logo.svg" alt="Логотип" width="185" height="96">
+      </a>
+    </div>
   </header>
+
 
   <!-- Маин -->
   <main class="main">
     <div class="main-promo">
-      <img class="main-promo__img" src="./img/header__main-img.svg" alt="Седона!" width="282px" height="214px">
+      <div class="wrapper">
+        <img class="main-promo__img" src="./img/header__main-img.svg" alt="Седона!" width="282px" height="214px">
+      </div>
     </div>
 
-    <div class="main-title">
-      <h2 class="main-title__title">СЕДОНА — небольшой<br>
-        городок в Аризоне,<br>
-        заслуживающий большего!</h2>
-      <p class="main-title__subtitle">Рассмотрим 5 причин, по которым Седона круче,чем гранд каньон!</p>
-    </div>
+    <div class="wrapper">
+      <div class="main-title">
+        <h2 class="main-title__title">СЕДОНА — небольшой<br>городок в Аризоне,
+          заслуживающий большего!
+        </h2>
+        <p class="main-title__subtitle">Рассмотрим 5 причин, по которым Седона круче,чем гранд каньон!</p>
+      </div>
     </div>
     <!-- Описание -->
     <section class="description">
@@ -49,33 +54,34 @@
         <div class="description-item__wrapper">
           <h3 class="description-item__title description-item__title--light">Настоящий городок</h3>
           <p class="description-item__subtitle description-item__subtitle--light">— №1 —</p>
-          <p class="description-item__subtitle description-item__subtitle--light">Седона не атракцион для туристов,<br>
+          <p class="description-item__subtitle description-item__subtitle--light">Седона не атракцион для
+            туристов,<br>
             там течет своя жизнь</p>
           </p>
         </div>
-        <img class="description__img" src="img/photo-city@1x 1.png" alt="Город" width="" height="">
+        <img class="description-item__img" src="img/photo-city@1x 1.png" alt="Город" width="" height="">
       </div>
 
-      <div class="services__container">
 
-        <div class=" services-item ">
-          <!-- <img class="services-item__img" src="img/icon-house.svg.svg" alt="Дом" width="39" height="36.83"> -->
+      <div class="services__container">
+        <div class="services-item">
+          <img class="services-item__img" src="img/icon-house.svg.svg" alt="Дом" width="39" height="36.83">
           <h3 class="services-item__title" aria-label="Жилье">Жилье</h3>
           <p class="services-item__subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
 
         <div class="services-item">
-          <!-- <img class="services-item__img" src="img/icon-burger.svg.svg" alt="Бургер" width="40" height="40"> -->
+          <img class="services-item__img" src="img/icon-burger.svg.svg" alt="Бургер" width="40" height="40">
           <h3 class="services-item__title--size" aria-label="Еда">Еда</h3>
           <p class="services-item__subtitle">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
         </div>
 
         <div class="services-item">
-          <!-- <img class="services-item__img" src="img/icon-gift.svg.svg" alt="Коробка-подарок" width="32" height="38"> -->
+          <img class="services-item__img" src="img/icon-gift.svg.svg" alt="Коробка-подарок" width="32" height="38">
           <h3 class="services-item__title" aria-label="Сувениры">Сувениры</h3>
           <p class="services-item__subtitle">Не только китайского, но и местного производства!</p>
         </div>
-
+      </div>
       </div>
 
 
@@ -86,34 +92,37 @@
           <h3 class="description-item__title description-item__title--light" aria-label="Там есть мост дьявола">
             Там есть мост дьявола<h3>
               <p class="description-item__subtitle description-item__subtitle--light">— №2 —</p>
-              <p class="description-item__subtitle description-item__subtitle--light">Да, по нему можно пройти! Если вы
+              <p class="description-item__subtitle description-item__subtitle--light">Да, по нему можно пройти! Если
+                вы
                 осмелитесь, конечно</p>
         </div>
         <img class="description-item__img" src="img/photo-bridge@1x 1.png" alt="Мост" width="" height="">
       </div>
 
-      <div class="description-item__wrapper description-item__wrapper--dark">
-        <div class="description-item">
-          <h3 class="description-item__title" aria-label="Небольшая площадь">Небольшая
-            площадь<h3>
-              <p class="description-item__subtitle">— №3 —</p>
-              <p class="description-item__subtitle">Все интересные места находятся<br>
-                очень близко</p>
-        </div>
+      <div class="description-item description-item--light">
+        <div class="description-item__wrapper--position">
+          <div class="description-item ">
+            <h3 class="description-item__title" aria-label="Небольшая площадь">Небольшая
+              площадь<h3>
+                <p class="description-item__subtitle">— №3 —</p>
+                <p class="description-item__subtitle">Все интересные места находятся<br>
+                  очень близко</p>
+          </div>
 
-        <div class="description-item">
-          <h3 class="description-item__title" aria-label="Красивая дорога">Красивая
-            дорога
-            <h3>
-              <p class="description-item__subtitle">— №4 —</p>
-              <p class="description-item__subtitle">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
-        </div>
+          <div class="description-item description-item--top">
+            <h3 class="description-item__title" aria-label="Красивая дорога">Красивая
+              дорога
+              <h3>
+                <p class="description-item__subtitle">— №4 —</p>
+                <p class="description-item__subtitle">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+          </div>
 
-        <div class="description-item">
-          <h3 class="description-item__title" aria-label="Мало туристов">Мало туристов
-            <h3>
-              <p class="description-item__subtitle">— №5 —</p>
-              <p class="description-item__subtitle">Большинство едет в гранд каньон <br> толпиться там</p>
+          <div class="description-item description-item--top">
+            <h3 class="description-item__title" aria-label="Мало туристов">Мало туристов
+              <h3>
+                <p class="description-item__subtitle">— №5 —</p>
+                <p class="description-item__subtitle">Большинство едет в гранд каньон <br> толпиться там</p>
+          </div>
         </div>
       </div>
 

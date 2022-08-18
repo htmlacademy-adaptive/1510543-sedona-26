@@ -1,17 +1,19 @@
 .find-container__wrapper {
+  max-width: 261px;
+  margin: 0 auto;
   padding-top: 38px;
-  padding-left: 18px;
-  padding-right: 18px;
   padding-bottom: 49px;
 }
 
 .find-container__title {
+  @include title;
   text-align: center;
 }
 
 .find-container__subtitle {
+  @include subtitle;
   text-align: center;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .button {
@@ -20,7 +22,7 @@
   width: 284px;
   height: 58px;
   color: rgba(255, 255, 255, 1);
-  margin-top: 20px;
+  // padding-top: 20px;
 
   @include title;
   @include background;
@@ -28,7 +30,9 @@
 }
 
 iframe {
+  display: block;
+  margin: 0 auto;
   min-width: 320px;
   min-height: 350px;
-  margin-top: 20px;
+  padding-top: 20px;
 }

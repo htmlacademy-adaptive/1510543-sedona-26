@@ -1,0 +1,24 @@
+.video {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.video__title {
+  text-align: center;
+
+  @include title;
+
+}
+
+.video__subtitle {
+  text-align: center;
+
+  @include subtitle;
+
+  padding-top: 30px;
+}
+
+.video__img {
+  display: inline-block;
+  padding-top: 17px;
+}

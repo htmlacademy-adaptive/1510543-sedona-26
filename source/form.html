@@ -11,33 +11,39 @@
 <body>
   <!-- Хедер -->
   <header class="header">
-    <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-    <button class="header__btn header__btn--active" aria-label="Открыть меню">1</button>
+    <div class="wrapper">
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <button class="header__btn header__btn--active" aria-label="Открыть меню">1</button>
 
-    <!-- Навигация -->
-    <nav class="header__navigation">
-      <ul class="navigation-list navigation-list--opened">
-        <li class="navigation-list__item"><a class="navigation-list__link" href="./index.html">Главная</a></li>
-        <li class="navigation-list__item"><a class="navigation-list__link" href="./catalog.html">Фото и видео</a></li>
-        <li class="navigation-list__item"><a class="navigation-list__link" href="./form.html">Форма отзыва</a></li>
-        <li class="navigation-list__item"><a class="navigation-list__link" href="#">Html Academy</a></li>
-      </ul>
-    </nav>
-    <!-- Логотип -->
-    <a class="header__logo" href="#">
-      <img class="header__img" src="img/header__logo.svg" alt="Логотип" width="185" height="96">
-    </a>
+      <!-- Навигация -->
+      <nav class="header__navigation">
+        <ul class="navigation-list navigation-list--opened">
+          <li class="navigation-list__item"><a class="navigation-list__link" href="./index.html">Главная</a></li>
+          <li class="navigation-list__item"><a class="navigation-list__link" href="./catalog.html">Фото и видео</a></li>
+          <li class="navigation-list__item"><a class="navigation-list__link" href="./form.html">Форма отзыва</a></li>
+          <li class="navigation-list__item"><a class="navigation-list__link" href="#">Html Academy</a></li>
+        </ul>
+      </nav>
+      <!-- Логотип -->
+      <a class="header__logo" href="#">
+        <img class="header__img" src="./img/header__logo.svg" alt="Логотип" width="185" height="96">
+      </a>
+    </div>
   </header>
   <!-- Маин -->
   <main class="main">
     <div class="main-promo">
-      <img class="main-promo__img" src="img/header__main-img.svg" alt="Седона!" width="282px" height="214px">
+      <div class="wrapper">
+        <img class="main-promo__img" src="./img/header__main-img.svg" alt="Седона!" width="282px" height="214px">
+      </div>
     </div>
-
-    <div class="main-title">
-      <h2 class="main-title__title">Оставьте свой отзыв</h2>
-      <p class="main-title__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-        достопримечательностях</p>
+    <div class="wrapper">
+      <div class="main-title">
+        <h2 class="main-title__title">Оставьте свой отзыв</h2>
+        <p class="main-title__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+          вами
+          достопримечательностях</p>
+      </div>
     </div>
     <!-- Формы -->
     <form class="forms">
