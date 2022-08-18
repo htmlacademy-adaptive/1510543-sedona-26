@@ -1,0 +1,37 @@
+.footer {
+  padding-top: 28px;
+  padding-left: 76px;
+  padding-right: 78px;
+  padding-bottom: 23px;
+}
+
+.footer__span {
+  text-align: center;
+
+  @include title;
+}
+
+.footer-list {
+  display: flex;
+  margin-top: 33px;
+}
+
+.footer-list__item {
+  margin-left: 5px;
+  list-style: none;
+}
+
+.footer-developed {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-developed__icon {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.footer-developed__subtitle {
+  @include subtitle;
+}

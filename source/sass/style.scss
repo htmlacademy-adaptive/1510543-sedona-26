@@ -1,1 +1,10 @@
-// Начните писать стили здесь
+@import "./mixins/mixin";
+@import "./fonts";
+@import "./blocks_catalog/catalog";
+@import "./blocks_form/forms.scss";
+@import "./blocks_index/description";
+@import "./blocks_index/find";
+@import "./blocks_index/footer";
+@import "./blocks_index/header";
+@import "./blocks_index/main";
+@import "./blocks_index/services";

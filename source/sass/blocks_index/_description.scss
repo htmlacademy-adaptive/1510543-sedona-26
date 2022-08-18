@@ -1,0 +1,41 @@
+.description-item--dark {
+  @include background;
+}
+
+.description-item__wrapper {
+  padding-top: 54px;
+  padding-left: 16px;
+  padding-right: 22px;
+  padding-bottom: 40px;
+}
+
+.description-item__wrapper--dark {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.description-item--position {
+  margin-top: 49px;
+}
+
+.description-item__title {
+  width: 282px;
+  text-align: center;
+}
+
+.description-item__title--light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.description-item__subtitle {
+  width: 282px;
+  text-align: center;
+  margin-top: 11px;
+}
+
+.description-item__subtitle--light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.description__img {
+  background-image: url("./img/photo-city@1x\ 1.png");
+}
