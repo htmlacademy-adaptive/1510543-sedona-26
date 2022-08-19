@@ -20,7 +20,9 @@
 
 .header__navigation {
   position: relative;
+
 }
+
 
 
 .navigation-list {
@@ -31,13 +33,22 @@
   z-index: 2;
 
   @include background;
+
+  @include tablets {
+    display: flex;
+  }
 }
+
+
+
 
 .navigation-list__item {
   list-style: none;
   text-align: center;
   padding-top: 17px;
   padding-bottom: 12px;
+
+
 }
 
 .navigation-list__link {
