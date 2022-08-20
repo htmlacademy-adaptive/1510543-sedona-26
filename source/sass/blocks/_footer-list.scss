@@ -1,0 +1,14 @@
+.footer-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 33px;
+}
+
+.footer-list__item {
+  margin-left: 5px;
+  list-style: none;
+}
+
+.footer-list__item :nth-child(1) {
+  margin: 0px;
+}

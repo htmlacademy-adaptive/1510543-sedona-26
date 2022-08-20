@@ -1,29 +1,38 @@
 .header {
   min-height: 56px;
+
 }
 
 .visually-hidden {
   display: none;
 }
 
-.header__btn--active {
+.header__btn {
   position: absolute;
+  right: 5%;
   z-index: 3;
+
+  @include tablets {
+    display: none;
+  }
+
 }
 
 .header__logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 3;
+  z-index: 1;
+
+  @include tablets {
+    z-index: 3;
+  }
 }
 
-.header__navigation {
-  position: relative;
 
+.navigation-list--opened {
+  display: block;
 }
-
-
 
 .navigation-list {
   position: absolute;
@@ -36,6 +45,8 @@
 
   @include tablets {
     display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    // justify-content: space-between;
   }
 }
 
@@ -47,14 +58,23 @@
   text-align: center;
   padding-top: 17px;
   padding-bottom: 12px;
+  border-bottom: 2px solid red;
+
+}
 
 
+.navigation-list__item:nth-child(4) {
+  border-bottom: none;
 }
 
 .navigation-list__link {
   display: inline-block;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
-
   @include title;
+
+  @include tablets {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+  }
 }

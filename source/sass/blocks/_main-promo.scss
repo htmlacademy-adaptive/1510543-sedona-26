@@ -1,0 +1,13 @@
+.main-promo {
+  background-image: url("../img/back-desktop.jpg.jpg");
+  min-height: 200px;
+  padding-top: 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-promo__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

@@ -3,9 +3,10 @@
 }
 
 .description-item__wrapper {
-  max-width: 282px;
+  border: 2px solid red;
+  // max-width: 282px;
   padding-top: 54px;
-  margin: 0 auto;
+  // margin: 0 auto;
   padding-bottom: 40px;
 }
 
@@ -42,6 +43,7 @@
 }
 
 .description-item__img {
-  display: block;
-  margin: 0 auto;
+  // display: block;
+  object-fit: cover;
+  width: 100%;
 }

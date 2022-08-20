@@ -1,0 +1,12 @@
+.footer__wrapper {
+  margin: 0 auto;
+  width: 282px;
+  padding-top: 28px;
+  padding-bottom: 23px;
+}
+
+.footer__span {
+  text-align: center;
+
+  @include title;
+}
