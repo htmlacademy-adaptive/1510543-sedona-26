@@ -6,6 +6,19 @@
   background-size: cover;
 }
 
+.main-promo::after {
+  // background-image: url("../img/Mobile/intro-triangle.svg.svg");
+  // // top: 50%;
+  // // left: 50%;
+  // border: 2px solid green;
+  content: "";
+  background-image: url("/source/img/Mobile/intro-triangle.svg.svg");
+  background-position: 50% bottom;
+  background-repeat: no-repeat;
+  display: block;
+  height: 57px;
+}
+
 .main-promo__img {
   display: block;
   margin: 0 auto;

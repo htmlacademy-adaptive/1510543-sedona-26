@@ -1,8 +1,28 @@
 .services {
-  max-width: 282px;
 
-  margin: 0 auto;
+  // margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 52px;
+  padding-left: 16px;
+  padding-right: 16px;
   border: 2px solid red;
+
+  @include tablets {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 36px;
+    padding-right: 31px;
+  }
+}
+
+.serv {
+  display: flex;
+
+  @include tablets {
+    display: block;
+
+  }
 }
