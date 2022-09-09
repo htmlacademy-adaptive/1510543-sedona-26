@@ -1,12 +1,26 @@
-.footer__wrapper {
-  margin: 0 auto;
-  width: 282px;
+.footer {
   padding-top: 28px;
   padding-bottom: 23px;
+
+  @include tablets {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+
+.footer__wrapper {
+
+
+  @include tablets {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // padding-top: 36px;
+    // padding-bottom: 36px;
+  }
 }
 
 .footer__span {
   text-align: center;
-
   @include title;
 }

@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   padding-top: 33px;
+  padding-bottom: 40px;
+
+  @include tablets {
+    padding: 0;
+  }
 }
 
 .footer-list__item {
@@ -10,5 +15,9 @@
 }
 
 .footer-list__item :nth-child(1) {
-  margin: 0px;
+  margin-left: 0px;
+}
+
+footer-list__svg:hover {
+  fill: rgba(84, 150, 189, 1);
 }

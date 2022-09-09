@@ -1,8 +1,15 @@
 .find-container__wrapper {
   max-width: 261px;
   margin: 0 auto;
-  padding-top: 38px;
-  padding-bottom: 49px;
+  padding-bottom: 32px;
+
+  @include tablets {
+    max-width: 435px;
+    // padding-top: 61px;
+    // padding-bottom: 58px;
+  }
+
+  @include desktop {}
 }
 
 .find-container__title {
@@ -17,5 +24,17 @@
 }
 
 .find-container__iframe {
+  padding: 0;
   width: 100%;
+  padding-top: 49px;
+  min-height: 350px;
+
+  @include tablets {
+    padding-top: 58px;
+
+  }
+
+  @include desktop {
+    padding-top: 66px;
+  }
 }

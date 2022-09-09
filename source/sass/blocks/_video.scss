@@ -1,6 +1,14 @@
 .video {
-  max-width: 280px;
+  padding-top: 17px;
+
   margin: 0 auto;
+
+  @include tablets {
+
+    padding-top: 58px;
+    padding-bottom: 40px;
+
+  }
 }
 
 .video__title {
@@ -19,6 +27,15 @@
 }
 
 .video__img {
-  display: inline-block;
-  padding-top: 17px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-bottom: 28px;
+
+
+  @include tablets {
+    margin-top: 66px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
 }

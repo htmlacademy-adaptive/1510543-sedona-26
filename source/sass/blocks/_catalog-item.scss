@@ -1,28 +1,66 @@
 .catalog-item {
   padding-top: 24px;
   padding-bottom: 30px;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+
+  @include tablets {
+
+    border-bottom: none;
+    padding: 0;
+
+  }
+
+}
+
+.catalog-item:nth-child(4) {
+  @include tablets {
+    padding-bottom: 0px;
+  }
+
+}
+
+.catalog-item__figure {
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .catalog-item__figcaption {
-  width: 175px;
+  display: flex;
 }
 
-.catalog-item__span {
-  display: inline-block;
+.catalog-item__figcaption {
+  @include tablets;
+
+  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
-.catalog-item__span--title {
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 21px;
-  text-align: left;
+
+
+.catalog-item__img {
+  width: 100%;
 }
 
-.catalog-item__span--subtitle {
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: left;
+.catalog-item__img--road {
+  @include tablets {
+    width: 648px;
+  }
+}
+
+.catalog-item__img--flower {
+  @include tablets {
+    width: 324px;
+  }
+}
+
+.catalog-item__img--forest {
+  @include tablets {
+    width: 324px;
+  }
+}
+
+.catalog-item__img--stone {
+  @include tablets {
+    width: 324px;
+  }
 }

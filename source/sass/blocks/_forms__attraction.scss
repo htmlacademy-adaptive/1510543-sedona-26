@@ -1,0 +1,41 @@
+.forms__attraction {
+  margin-top: 24px;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+
+  @include tablets {
+    margin-top: 48px;
+    padding-top: 28px;
+  }
+}
+
+.attraction-label {}
+
+.attraction-input {}
+
+
+
+.attraction {
+
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.attraction-legend {
+  text-align: center;
+  @include title;
+}
+
+.attraction-span {
+  display: block;
+  margin-top: 16px;
+  @include subtitle;
+}
+
+.attraction-label {}
+
+.attraction-input {}

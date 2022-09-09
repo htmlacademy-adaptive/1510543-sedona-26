@@ -1,0 +1,18 @@
+.promo-catalog {
+  background-image: url("../img/back-desktop-catalog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 52px;
+  padding-bottom: 67px;
+  text-align: center;
+
+  @include tablets {}
+}
+
+.promo-catalog__img {
+  width: 229px;
+  height: 39px;
+
+
+}

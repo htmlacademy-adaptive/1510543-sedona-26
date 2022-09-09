@@ -15,7 +15,13 @@ body {
   margin: 0 auto;
 
   @include tablets {
-    max-width: 768px;
+    max-width: 691px;
+
+
+  }
+
+  @include desktop {
+    max-width: 1074px;
   }
 
 }

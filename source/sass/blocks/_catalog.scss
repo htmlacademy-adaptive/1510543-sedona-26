@@ -1,4 +1,14 @@
 .catalog {
+  // display: flex;
+  // flex-wrap: wrap;
   max-width: 280px;
   margin: 0 auto;
+
+  @include tablets {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 648px;
+    // (Пробую min-width что то не срабатывает)
+    margin: 0 auto;
+  }
 }

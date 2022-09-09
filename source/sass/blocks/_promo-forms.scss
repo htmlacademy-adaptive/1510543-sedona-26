@@ -1,25 +1,21 @@
-.main-promo {
+.promo-forms {
   position: relative;
-  background-image: url("../img/back-desktop.jpg.jpg");
-  padding-top: 90px;
-  padding-bottom: 85px;
+  background-image: url("../img/back-desktop__form.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-
-
-
-  @include tablets {
-    padding-top: 77px;
-  }
-
-  @include desktop {
-    padding-top: 78px;
-  }
+  @include tablets {}
 }
 
-.main-promo::after {
+.promo-forms__img {
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+.promo-forms::after {
   content: "";
   position: absolute;
   background-image: url(../img/promo-lines.svg);
@@ -31,6 +27,7 @@
 
   @include tablets {
     background-image: url(../img/white-tablets.svg);
+    background-position: center;
     width: 768px;
 
     // height: 57px;
@@ -44,18 +41,10 @@
 }
 
 
+.main-title {}
 
+.main-title--decoration {}
 
-.main-promo__img {
-  display: block;
-  margin: 0 auto;
-  width: 229px;
+.main-title__title {}
 
-  @include tablets {
-    width: 457px;
-  }
-
-  @include desktop {
-    width: 459px;
-  }
-}
+.main-title__subtitle {}

@@ -1,12 +1,51 @@
 .main-title {
+  position: relative;
   padding-top: 32px;
-  padding-bottom: 32px;
+
+
+  @include tablets {
+    padding-top: 47px;
+    padding-bottom: 55px;
+  }
+
+  @include desktop {
+    padding-top: 59px;
+    padding-bottom: 44px;
+  }
+}
+
+.main-title--catalog {
+  max-width: 458px;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-bottom: 25px;
+
+  @include tablets {
+    padding-top: 66px;
+    padding-bottom: 67px;
+  }
+
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
+}
+
+
+
+
+.main-title::after {
+
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .main-title__title {
   text-align: center;
-
   @include title;
+  font-size: 21px;
 }
 
 .main-title__span {
@@ -18,4 +57,25 @@
   @include subtitle;
   margin-top: 35px;
   text-align: center;
+  ;
+
+  @include tablets {
+    margin-top: 38px;
+
+  }
+
+  @include desktop {
+    margin-top: 37px
+  }
+}
+
+.main-title--decoration {
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+
+  @include tablets {
+    border: none;
+    max-width: 435px;
+    text-align: center;
+    margin: 0 auto;
+  }
 }

@@ -1,20 +1,39 @@
+.find {
+  padding-top: 38px;
+
+  @include tablets {
+    padding-top: 61px;
+  }
+
+}
+
+
+
+
 .button {
   display: block;
   margin: 0 auto;
   width: 284px;
   height: 58px;
   color: rgba(255, 255, 255, 1);
-  // padding-top: 20px;
+
 
   @include title;
   @include background;
   border: none;
+
+
 }
 
-iframe {
-  display: block;
-  margin: 0 auto;
-  min-width: 320px;
-  min-height: 350px;
-  padding-top: 20px;
+.button--left {
+  @include tablets {
+    margin: 0;
+  }
 }
+
+// iframe {
+//   display: block;
+//   margin: 0 auto;
+//   min-height: 350px;
+
+// }

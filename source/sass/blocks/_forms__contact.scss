@@ -1,0 +1,92 @@
+.forms__contact {
+  @include tablets {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 48px;
+  }
+}
+
+.contact-fieldset {
+  margin-top: 24px;
+  padding-top: 20px;
+  border: none;
+
+
+  @include tablets {
+    margin-top: 48px;
+    padding-top: 28px;
+  }
+}
+
+
+
+.contact {
+  padding-bottom: 39px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+
+  @include tablets {
+    border: none;
+  }
+}
+
+.contact-legend {
+  // padding-top: 24px;
+  text-align: center;
+  @include title;
+}
+
+.contact-span {
+  display: block;
+  margin-top: 16px;
+  @include subtitle;
+}
+
+
+.contact-input {
+  min-width: 280px;
+  min-height: 58px;
+  padding-left: 16px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+
+  @include desktop {
+    min-width: 430px;
+
+  }
+}
+
+.contact-input--mail {
+  background-image: url(../img/mail-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 225px;
+
+  @include desktop {
+    background-position: 375px;
+  }
+}
+
+.contact-input--phone {
+  background-image: url(../img/phone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 225px;
+
+  @include desktop {
+    background-position: 375px;
+  }
+}
+
+
+
+.contact-label {
+  position: relative;
+}
+
+.contact-label--phone {
+  background-image: url(img/phone-icon.svg);
+  width: 58px;
+  height: 58px;
+
+}
+
+.contact-label--mail {}

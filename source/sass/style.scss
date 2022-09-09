@@ -3,7 +3,7 @@
 @import "./variables/media";
 
 @import "./blocks/catalog";
-@import "./blocks/forms.scss";
+@import "./blocks/forms";
 @import "./blocks/description";
 @import "./blocks/find";
 @import "./blocks/footer";
@@ -20,4 +20,12 @@
 @import "./blocks/find-container";
 @import "./blocks/footer-developed";
 @import "./blocks/footer-list";
-@import "./blocks/services"
+@import "./blocks/services";
+@import "./blocks/services-group";
+@import "./blocks/places";
+@import "./blocks/forms__impression";
+@import "./blocks/forms__contact";
+@import "./blocks/forms__attraction";
+@import "./blocks/forms__review";
+@import "./blocks/promo-forms";
+@import "./blocks/promo-catalog";
