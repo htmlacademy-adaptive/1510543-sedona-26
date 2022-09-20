@@ -4,11 +4,7 @@
   @include tablets {
     padding-top: 61px;
   }
-
 }
-
-
-
 
 .button {
   display: block;
@@ -16,24 +12,31 @@
   width: 284px;
   height: 58px;
   color: rgba(255, 255, 255, 1);
-
+  cursor: pointer;
 
   @include title;
   @include background;
   border: none;
 
-
 }
+
+.button:hover {
+  background-color: rgba(102, 158, 192, 1);
+}
+
+.button:active {
+  background-color: rgba(84, 150, 189, 1);
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
+}
+
+
+
 
 .button--left {
   @include tablets {
     margin: 0;
   }
 }
-
-// iframe {
-//   display: block;
-//   margin: 0 auto;
-//   min-height: 350px;
-
-// }

@@ -22,8 +22,6 @@
   @include title
 }
 
-.review-label {}
-
 .review-textarea {
   width: 100%;
   @include subtitle;
@@ -31,5 +29,3 @@
   padding-top: 16px;
   padding-left: 16px;
 }
-
-.button {}

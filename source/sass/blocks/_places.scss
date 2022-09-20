@@ -3,10 +3,6 @@
   padding-bottom: 26px;
   background-color: rgba(238, 238, 238, 1);
 
-
-
-
-
   @include tablets {
     display: flex;
     padding-top: 42px;
@@ -23,7 +19,6 @@
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(214, 214, 214, 1);
 
-
   @include tablets {
     border: none;
   }
@@ -35,7 +30,6 @@
 .places__container:nth-child(1) {
   padding-top: 0px;
 
-
   @include tablets {
     padding-top: 24px;
     width: 189px;
@@ -43,8 +37,6 @@
 }
 
 .places__container:nth-child(2) {
-
-
   @include tablets {
     width: 162px;
   }
@@ -68,7 +60,6 @@
     display: block;
     margin: 0 auto;
     max-width: 98px;
-
   }
 }
 

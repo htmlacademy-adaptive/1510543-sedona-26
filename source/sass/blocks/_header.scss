@@ -1,5 +1,7 @@
 .header {
+  position: relative;
   min-height: 56px;
+  background-color: #fff;
 
 }
 
@@ -11,8 +13,9 @@
   position: absolute;
   padding: 0;
   margin: 0;
-  left: 80%;
-  top: 2%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   outline: none;
   border: 0;
   z-index: 3;
@@ -42,7 +45,7 @@
 }
 
 .header__btn--active .header__span {
-  display: none;
+  // display: none;
 }
 
 .header__btn--active::before {
@@ -57,8 +60,6 @@
   transform: rotate(-45deg);
 }
 
-
-
 .header__logo {
   position: absolute;
   left: 50%;
@@ -70,8 +71,6 @@
   }
 }
 
-.header__navigation {}
-
 .navigation-list--opened {
   display: block;
   position: absolute;
@@ -80,12 +79,10 @@
   right: 0;
   z-index: 2;
   @include background;
-  display: none;
+  // display: none;
 }
 
 .navigation-list {
-
-
   @include tablets {
     display: flex;
     justify-content: space-between;
@@ -95,8 +92,6 @@
 }
 
 
-
-
 .navigation-list__item {
   list-style: none;
   text-align: center;
@@ -104,7 +99,6 @@
   padding-bottom: 12px;
 
 }
-
 
 .navigation-list__item:nth-child(4) {
   border-bottom: none;
@@ -124,4 +118,12 @@
   @include desktop {
     color: rgba(0, 0, 0, 1);
   }
+
+  &:hover {
+    @include tablets {
+      color: #766357;
+    }
+
+  }
+
 }

@@ -2,14 +2,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .footer-developed__icon {
   display: flex;
   margin-left: 5px;
+
+  &:hover {
+    color: #81B3D2;
+  }
+
+  &:active {
+    color: #B3B3B3;
+  }
 }
 
 .footer-developed__subtitle {
   @include subtitle;
+
+  &:hover {
+    color: #81B3D2;
+  }
+
+  &:active {
+    color: #B3B3B3;
+  }
 }

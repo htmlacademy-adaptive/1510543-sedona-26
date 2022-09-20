@@ -5,11 +5,7 @@
 
   @include tablets {
     max-width: 435px;
-    // padding-top: 61px;
-    // padding-bottom: 58px;
   }
-
-  @include desktop {}
 }
 
 .find-container__title {
@@ -31,7 +27,6 @@
 
   @include tablets {
     padding-top: 58px;
-
   }
 
   @include desktop {

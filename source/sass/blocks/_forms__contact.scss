@@ -11,13 +11,11 @@
   padding-top: 20px;
   border: none;
 
-
   @include tablets {
     margin-top: 48px;
     padding-top: 28px;
   }
 }
-
 
 
 .contact {
@@ -31,7 +29,6 @@
 }
 
 .contact-legend {
-  // padding-top: 24px;
   text-align: center;
   @include title;
 }
@@ -44,49 +41,81 @@
 
 
 .contact-input {
+  position: relative;
   min-width: 280px;
   min-height: 58px;
   padding-left: 16px;
+  padding-right: 16px;
   background-color: rgba(242, 242, 242, 1);
-  border: none;
+  border: 4px solid transparent;
+  // border: none;
+  outline: none;
+  font-style: Bold;
+  font-size: 18px;
+  font-weight: 700;
+
 
   @include desktop {
+    min-width: 430px;
+  }
+}
+
+
+.contact-input:focus {
+  background-color: #ffff;
+  border-color: #E5E5E5;
+}
+
+.contact-input:hover {
+  background-color: #E5E5E5;
+
+}
+
+.contact-input--mail {
+  padding-left: 14px;
+  padding-right: 67px;
+  background-image: url(../img/mail-icon.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+
+  @include desktop {
+    padding-right: 191px;
     min-width: 430px;
 
   }
 }
 
-.contact-input--mail {
-  background-image: url(../img/mail-icon.svg);
-  background-repeat: no-repeat;
-  background-position: 225px;
+// .contact-input--phone {
+//   padding-left: 16px;
+//   padding-right: 67px;
+//   background-image: url(../img/phone-icon.svg);
+//   background-position: right;
+//   background-repeat: no-repeat;
 
-  @include desktop {
-    background-position: 375px;
-  }
-}
-
-.contact-input--phone {
-  background-image: url(../img/phone-icon.svg);
-  background-repeat: no-repeat;
-  background-position: 225px;
-
-  @include desktop {
-    background-position: 375px;
-  }
-}
+//   @include desktop {
+//     padding-right: 191px;
+//     min-width: 430px;
+//   }
 
 
+// }
 
-.contact-label {
-  position: relative;
-}
-
-.contact-label--phone {
-  background-image: url(img/phone-icon.svg);
+.contact-input--phone::after {
+  content: "";
+  display: block;
   width: 58px;
   height: 58px;
+  background-color: #E5E5E5;
+  background-image: url("../img/mail-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
 
 }
 
-.contact-label--mail {}
+// .contact-label {
+//   position: relative;
+// }

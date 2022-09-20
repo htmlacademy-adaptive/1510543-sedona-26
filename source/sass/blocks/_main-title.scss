@@ -2,7 +2,6 @@
   position: relative;
   padding-top: 32px;
 
-
   @include tablets {
     padding-top: 47px;
     padding-bottom: 55px;
@@ -31,12 +30,7 @@
   }
 }
 
-
-
-
 .main-title::after {
-
-
   @include tablets {
     display: none;
   }
@@ -61,7 +55,6 @@
 
   @include tablets {
     margin-top: 38px;
-
   }
 
   @include desktop {

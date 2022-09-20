@@ -12,9 +12,6 @@
 }
 
 .impression {
-
-
-
   @include tablets {
     display: flex;
     margin: 0 auto;
@@ -30,9 +27,10 @@
 
 
 .impression-legend {
-
   text-align: center;
-  @include title
+  @include title;
+
+
 }
 
 .impression-span {
@@ -55,6 +53,15 @@
   }
 }
 
+.impression-span:hover {
+  background-color: #E5E5E5;
+}
+
+.impression-span:active {
+  background-color: #D5D5D5;
+}
+
+
 .impression-span:nth-child(1) {
   margin-top: 0px;
 
@@ -68,7 +75,6 @@
   align-items: center;
   column-gap: 16px;
   margin-top: 16px;
-  font-family: PT Sans;
   font-style: Bold;
   font-size: 18px;
   font-weight: 700;
@@ -79,24 +85,15 @@
 }
 
 
-.impression-label:nth-child(1) {
-  margin-top: 0px;
-
-  @include tablets {
-    margin-top: 16px;
-  }
-}
-
 
 
 .impression-input {
-
   appearance: none;
   position: absolute;
-
 
   &:checked~.impression-span::before {
     width: 16px;
     height: 16px;
+
   }
 }

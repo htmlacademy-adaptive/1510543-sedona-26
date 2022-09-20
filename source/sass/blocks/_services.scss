@@ -24,11 +24,7 @@
 
   }
 
-  @include desktop {}
-
 }
-
-
 
 .services-container:nth-child(1) {
   @include tablets {

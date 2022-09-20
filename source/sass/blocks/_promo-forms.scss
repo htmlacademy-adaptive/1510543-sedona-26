@@ -1,50 +1,46 @@
 .promo-forms {
   position: relative;
-  background-image: url("../img/back-desktop__form.jpg");
+  background-image: url("../img/back-desktop.jpg");
+  padding-top: 52px;
+  padding-bottom: 67px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  @include tablets {}
+  @include tablets {
+    padding-top: 95px;
+    padding-bottom: 117px;
+  }
+
+  @include desktop {
+    padding-top: 101px;
+    padding-bottom: 120px;
+
+  }
+
 }
-
-.promo-forms__img {
-  display: block;
-  margin: 0 auto;
-
-}
-
 
 .promo-forms::after {
   content: "";
   position: absolute;
-  background-image: url(../img/promo-lines.svg);
+  background-image: url("../img/white-desktop-line.svg");
+  background-repeat: no-repeat;
   background-position: center;
   bottom: 0px;
-  width: 320px;
+  width: 100%;
   height: 57px;
+}
 
+.promo-forms__img {
+  max-width: 229px;
+  display: block;
+  margin: 0 auto;
 
   @include tablets {
-    background-image: url(../img/white-tablets.svg);
-    background-position: center;
-    width: 768px;
-
-    // height: 57px;
+    max-width: 457px;
   }
 
   @include desktop {
-    background-image: url(../img/white-desktop.svg);
-    background-position: center;
-    width: 1200px;
+    max-width: 459px;
   }
 }
-
-
-.main-title {}
-
-.main-title--decoration {}
-
-.main-title__title {}
-
-.main-title__subtitle {}

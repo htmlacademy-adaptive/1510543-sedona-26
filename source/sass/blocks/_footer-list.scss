@@ -18,6 +18,25 @@
   margin-left: 0px;
 }
 
-footer-list__svg:hover {
-  fill: rgba(84, 150, 189, 1);
+.footer-list__svg {
+  width: 48px;
+  height: 48px;
+  padding: 17px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(129, 179, 210, 1);
+  color: white;
+  cursor: pointer;
+}
+
+.footer-list__svg:hover {
+  background-color: rgba(102, 158, 192, 1);
+
+}
+
+.footer-list__svg:active {
+  background-color: rgba(84, 150, 189, 1);
+  opacity: 0.7;
+
 }

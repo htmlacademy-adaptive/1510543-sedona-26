@@ -1,10 +1,8 @@
 .video {
   padding-top: 17px;
-
   margin: 0 auto;
 
   @include tablets {
-
     padding-top: 58px;
     padding-bottom: 40px;
 
@@ -22,20 +20,37 @@
   text-align: center;
 
   @include subtitle;
-
   padding-top: 30px;
 }
 
 .video__img {
+  position: relative;
   display: block;
   margin: 0 auto;
-  margin-top: 38px;
-  margin-bottom: 28px;
-
+  padding-top: 38px;
+  padding-bottom: 28px;
+  max-width: 280px;
 
   @include tablets {
-    margin-top: 66px;
-    margin-bottom: 40px;
-    width: 100%;
+    padding-top: 66px;
+    padding-bottom: 40px;
+    max-width: 648px;
+
+    @include desktop {
+      min-width: 800px;
+    }
   }
+
+}
+
+.video__img::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 48px;
+  height: 54px;
+  // top: 0;
+  // left: 50%;
+  background-image: url("./img/Polygon\ 1.svg");
+
 }

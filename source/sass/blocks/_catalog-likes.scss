@@ -1,3 +1,40 @@
 .catalog-likes {
-  border: 2px solid red;
+  display: flex;
+
+  @include tablets {
+
+    padding-top: 28px;
+    padding-bottom: 31px;
+
+  }
+
+
+}
+
+.catalog-likes__btn {
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/like-icon.svg");
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include desktop {
+    background-image: url("../img/like-icon-black.svg");
+  }
+}
+
+.catalog-likes__numbers {
+  font-weight: bold;
+  margin-left: 14px;
+  text-align: center;
+
+  @include tablets {
+    margin-left: 9px;
+  }
+
+  @include desktop {
+    color: rgba(255, 255, 255, 1);
+  }
+
 }
