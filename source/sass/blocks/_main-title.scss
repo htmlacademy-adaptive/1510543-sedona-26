@@ -63,7 +63,9 @@
 }
 
 .main-title--decoration {
-  border-bottom: 1px solid rgba(229, 229, 229, 1);
+  padding-left: 18px;
+  padding-right: 18px;
+
 
   @include tablets {
     border: none;
