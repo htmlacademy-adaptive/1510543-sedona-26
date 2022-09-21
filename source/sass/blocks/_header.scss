@@ -13,19 +13,20 @@
   position: absolute;
   padding: 0;
   margin: 0;
-  right: 0;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   outline: none;
+  background-color: transparent;
   border: 0;
   z-index: 3;
-  background-color: transparent;
   width: 23px;
   height: 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+
 
 
   @include tablets {
@@ -40,12 +41,11 @@
   content: "";
   width: 100%;
   height: 4px;
-
-  @include background;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .header__btn--active .header__span {
-  // display: none;
+  display: none;
 }
 
 .header__btn--active::before {
@@ -97,6 +97,7 @@
   text-align: center;
   padding-top: 17px;
   padding-bottom: 12px;
+  // width: 153px;
 
 }
 

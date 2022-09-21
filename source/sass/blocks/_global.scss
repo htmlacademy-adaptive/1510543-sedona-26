@@ -23,7 +23,7 @@
 
 
 .wrapper {
-  max-width: 282px;
+  // max-width: 282px;
   margin: 0 auto;
 
   @include tablets {
@@ -40,4 +40,12 @@
 .wrapper--header {
   position: relative;
   min-height: 56px;
+}
+
+.picture {
+  flex-grow: 2;
+}
+
+.modal {
+  display: none;
 }
