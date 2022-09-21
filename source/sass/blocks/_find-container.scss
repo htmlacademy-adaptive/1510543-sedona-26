@@ -1,0 +1,35 @@
+.find-container__wrapper {
+  max-width: 261px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+
+  @include tablets {
+    max-width: 435px;
+  }
+}
+
+.find-container__title {
+  @include title;
+  text-align: center;
+}
+
+.find-container__subtitle {
+  @include subtitle;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.find-container__iframe {
+  padding: 0;
+  width: 100%;
+  padding-top: 49px;
+  min-height: 350px;
+
+  @include tablets {
+    padding-top: 58px;
+  }
+
+  @include desktop {
+    padding-top: 66px;
+  }
+}

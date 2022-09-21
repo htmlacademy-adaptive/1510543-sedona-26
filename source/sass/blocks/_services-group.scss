@@ -1,0 +1,47 @@
+.services-group {
+  padding-top: 14px;
+  padding-left: 8px;
+
+  @include tablets {
+    padding: 0;
+    text-align: center;
+    margin-top: 25px;
+
+  }
+}
+
+.services-group:nth-child(2) {
+  padding-left: 12px;
+
+  @include tablets {
+    padding: 0;
+  }
+}
+
+
+
+.services-group__subtitle {
+  margin-top: 16px;
+
+  @include subtitle;
+
+  @include tablets {
+    margin-top: 32px;
+
+  }
+
+}
+
+.services-group__subtitle:nth-child(2) {
+
+
+  @include tablets {}
+
+}
+
+.services-group__subtitle:nth-child(3) {
+
+
+  @include tablets {}
+
+}

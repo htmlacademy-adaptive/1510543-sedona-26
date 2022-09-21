@@ -1,0 +1,50 @@
+.main-promo {
+  position: relative;
+  background-image: url("../img/back-desktop.jpg");
+  padding-top: 90px;
+  padding-bottom: 85px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+
+
+  @include tablets {
+    padding-top: 77px;
+  }
+
+  @include desktop {
+    padding-top: 78px;
+  }
+}
+
+.main-promo::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/white-desktop-line.svg");
+  background-position: center;
+  bottom: 0px;
+  width: 100%;
+  height: 57px;
+
+}
+
+.main-promo__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 282px;
+  max-height: 214px;
+
+
+
+  @include tablets {
+    max-width: 416px;
+    max-height: 349px;
+  }
+
+  @include desktop {
+    max-width: 459px;
+    max-height: 349px;
+  }
+}

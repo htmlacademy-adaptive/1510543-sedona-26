@@ -1,41 +1,30 @@
 @import "./mixins/mixin";
 @import "./fonts";
-@import "./blocks_index/header";
-@import "./blocks_index/main";
-@import "./blocks_index/description";
-@import "./blocks_index/services";
-@import "./blocks_index/find";
-@import "./blocks_index/footer";
-@import "./blocks_form/forms.scss";
-@import "./blocks_catalog/catalog";
-
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  max-width: 320px;
-  margin: 0 auto;
-  border: 2px solid red
-}
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include title;
-}
-
-p,
-a {
-  @include subtitle;
-}
+@import "./variables/media";
+@import "./blocks/catalog";
+@import "./blocks/forms";
+@import "./blocks/description";
+@import "./blocks/find";
+@import "./blocks/footer";
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/main-promo";
+@import "./blocks/main-title";
+@import "./blocks/global";
+@import "./blocks/video";
+@import "./variables/media";
+@import "./blocks/catalog-item";
+@import "./blocks/catalog-likes";
+@import "./blocks/description-item";
+@import "./blocks/find-container";
+@import "./blocks/footer-developed";
+@import "./blocks/footer-list";
+@import "./blocks/services";
+@import "./blocks/services-group";
+@import "./blocks/places";
+@import "./blocks/forms__impression";
+@import "./blocks/forms__contact";
+@import "./blocks/forms__attraction";
+@import "./blocks/forms__review";
+@import "./blocks/promo-forms";
+@import "./blocks/promo-catalog";

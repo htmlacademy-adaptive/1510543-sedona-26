@@ -1,5 +1,5 @@
 @mixin title {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -7,7 +7,7 @@
 }
 
 @mixin subtitle {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -16,11 +16,4 @@
 
 @mixin background {
   background-color: rgba(129, 179, 210, 1);
-}
-
-@mixin padding {
-  padding-top: 32px;
-  padding-left: 18px;
-  padding-right: 18px;
-  ;
 }

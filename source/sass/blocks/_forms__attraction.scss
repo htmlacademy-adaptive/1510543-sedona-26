@@ -1,0 +1,107 @@
+.forms__attraction {
+  margin-top: 24px;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+  width: 100%;
+
+
+  @include tablets {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(219, 219, 219, 1);
+    border-bottom: none;
+  }
+}
+
+.attraction {
+  @include tablets {
+    // max-width: 443px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+  }
+
+  @include desktop {
+    justify-content: space-around;
+
+
+  }
+}
+
+.attraction-legend {
+  padding-left: 65px;
+  padding-right: 65px;
+  text-align: center;
+  @include title;
+}
+
+.attraction-label {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-top: 20px;
+  font-family: PT Sans;
+  font-style: Bold;
+  font-size: 18px;
+  font-weight: 700;
+  // border: 2px solid red;
+
+  @include tablets {
+    margin-top: 28px;
+
+
+  }
+
+  @include desktop {
+    margin-top: 45px;
+  }
+}
+
+
+
+.attraction-span {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-image: url(../img/ticky.svg);
+
+  }
+
+}
+
+
+.attraction-span:hover {
+  background-color: #E5E5E5;
+}
+
+.attraction-span:active {
+  background-color: #D5D5D5;
+}
+
+
+.attraction-input {
+  appearance: none;
+  position: absolute;
+
+  &:checked~.attraction-span::before {
+    width: 22px;
+    height: 16px;
+
+
+  }
+}

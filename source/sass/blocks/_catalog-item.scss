@@ -1,0 +1,151 @@
+.catalog-item {
+
+  padding-top: 24px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+
+
+  @include tablets {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  @include desktop {
+    position: relative;
+  }
+
+}
+
+.catalog-item:nth-child(4) {
+  @include tablets {
+    padding-bottom: 0px;
+  }
+
+}
+
+.catalog-item__figure {
+
+
+
+  @include tablets {
+    background-color: rgba(242, 242, 242, 1);
+  }
+
+  @include desktop {
+    background-color: rgba(0, 0, 0, 0.8)
+  }
+}
+
+.catalog-item__figure--dark {
+  @include tablets {
+    background-color: rgba(234, 234, 234, 1);
+  }
+}
+
+
+
+.catalog-item__figcaption {
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+
+  @include tablets {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  @include desktop {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.catalog-item__span {
+  display: block;
+
+  @include desktop {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.catalog-item__img {
+  max-width: 280px;
+  max-height: 280px;
+  object-fit: cover;
+
+}
+
+.catalog-item__img--road {
+  @include tablets {
+    max-width: 648px;
+    max-height: 400px;
+
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    max-height: 400px;
+  }
+}
+
+.catalog-item__img--flower {
+  @include tablets {
+    max-width: 324px;
+    max-height: 267px;
+  }
+
+  @include desktop {
+    max-width: 400px;
+    min-height: 267px;
+
+  }
+}
+
+.catalog-item__img--forest {
+  @include tablets {
+    max-width: 324px;
+    max-height: 267px;
+  }
+
+  @include desktop {
+    max-width: 400px;
+    min-height: 267px;
+
+  }
+}
+
+.catalog-item__img--stone {
+  @include tablets {
+    max-width: 324px;
+    max-height: 267px;
+
+  }
+
+  @include desktop {
+    max-width: 400px;
+    min-height: 267px;
+
+  }
+}
+
+.catalog-item__span--title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+
+
+}
+
+.catalog-item__container {
+  padding-top: 15px;
+  padding-bottom: 11px;
+
+  @include tablets {
+    padding-top: 22px;
+    padding-bottom: 15px;
+  }
+}

@@ -1,0 +1,18 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 280px;
+  margin: 0 auto;
+
+
+  @include tablets {
+
+    max-width: 648px;
+
+  }
+
+  @include desktop {
+    max-width: 1200px;
+
+  }
+}
